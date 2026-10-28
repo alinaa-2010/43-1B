@@ -1,0 +1,17 @@
+[2026-05-20 13:17:46.294303] [INFO] Admin added
+[2026-05-20 13:17:46.295894] [INFO] Teacher added
+[2026-05-20 13:17:46.332384] [INFO] Student added
+[2026-05-20 13:17:46.336247] [INFO] Course created
+[2026-05-20 13:17:46.338038] [INFO] Student enrolled to course
+[2026-05-20 13:17:46.339688] [INFO] Grade added
+[2026-05-20 13:17:46.347825] [INFO] Course deleted
+[2026-05-20 13:29:58.651512] student added
+[2026-05-20 13:29:58.654642] course created
+[2026-05-20 13:29:58.659117] course deleted
+[2026-05-20 13:34:46.402780] [INFO] Admin added
+[2026-05-20 13:34:46.403292] [INFO] Teacher added
+[2026-05-20 13:34:46.404567] [INFO] Student added
+[2026-05-20 13:34:46.405981] [INFO] Course created
+[2026-05-20 13:34:46.406789] [INFO] Student enrolled to course
+[2026-05-20 13:34:46.451858] [INFO] Grade added
+[2026-05-20 13:34:46.455029] [INFO] Course deleted
