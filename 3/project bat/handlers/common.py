@@ -9,7 +9,7 @@ router = Router()
 async def start(message: Message):
     stats.users.add(message.from_user.id)
     await message.answer(
-        "🕹️ <b>Аркада открыта!<b>\n"
+        "🕹️ <b>Аркада открыта!</b>\n"
         "Йоу, Кидай эмодзи 🎲 🎰 ⚽️ 🏀 🏈 🎳 🎯 — или чекни команды: /help"
     )
 
