@@ -5,4 +5,4 @@ router = Router()
 
 @router.message()
 async def fallback(message: Message):
-    await message.answer("🤷‍♂️ Не понял. Кидай эмодзи 🏀 или вызови /help")
+    await message.answer("🤷🏻 Не понял. Кидай эмодзи 🏀 или вызови /help")

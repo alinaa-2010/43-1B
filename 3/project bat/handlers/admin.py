@@ -10,9 +10,9 @@ router.message.filter(F.chat.type == "private")
 
 @router.message(Command("stats"), IsAdmin())
 async def show_stats(message: Message):
-    rows = "\n".join(f"{"emoji"} x {n}" for emoji, n in stats.plays.most_common() or "пока тишина")
+    rows = "\n".join(f"{emoji} x {n}" for emoji, n in stats.plays.most_common() or "пока тишина")
     await message.answer(
-        f"📊 <b>Статистика всей базы<b>\n"
+        f"📊 <b>Статистика всея базы<b>\n"
         f"Игроков: {len(stats.users)}\n"
         f"Игр сыграно: {sum(stats.plays.values())}\n{rows}"
     )
