@@ -13,7 +13,6 @@ bot = Bot(token=os.getenv("BOT_TOKEN"))
 dp = Dispatcher()
 router = Router()
 
-# Клавиатура
 keyboard = ReplyKeyboardMarkup(
     keyboard=[
         [KeyboardButton(text="⭐ Топ фильмов")],
@@ -23,7 +22,6 @@ keyboard = ReplyKeyboardMarkup(
 )
 
 
-# /start
 @router.message(CommandStart())
 async def start(message: Message):
     await message.answer(
@@ -34,7 +32,6 @@ async def start(message: Message):
     )
 
 
-# /help и кнопка помощи
 @router.message(Command("help"))
 @router.message(F.text == "ℹ️ Помощь")
 async def help(message: Message):
@@ -46,7 +43,6 @@ async def help(message: Message):
     )
 
 
-# /top и кнопка топа
 @router.message(Command("top"))
 @router.message(F.text == "⭐ Топ фильмов")
 async def top(message: Message):
@@ -60,19 +56,16 @@ async def top(message: Message):
     )
 
 
-# Приветствие
 @router.message(F.text.lower() == "привет")
 async def hello(message: Message):
     await message.answer("Привет! 👋 Рад тебя видеть.")
 
 
-# Спасибо
 @router.message(F.text.lower() == "спасибо")
 async def thanks(message: Message):
     await message.answer("Всегда пожалуйста. 😊")
 
 
-# Ловец всего остального
 @router.message()
 async def other(message: Message):
     await message.answer(
